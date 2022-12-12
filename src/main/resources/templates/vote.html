@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymleaf.org">
+<head>
+    <title>Voting App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .voting-app {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .voting-app h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .voting-app form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .voting-app form p {
+            margin-top: 0;
+        }
+
+        .voting-app form input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .voting-app form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="voting-app">
+    <h1>Voting App</h1>
+    Insert your name with student id
+    <form action="#" th:action="@{/doLogin}" method="post">
+        <input type="text" name="name"/>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
